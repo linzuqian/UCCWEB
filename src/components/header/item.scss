@@ -1,0 +1,32 @@
+@import "~@/assets/scss/public.scss";
+
+.components-header{
+  background-color: black;
+  .container{
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-box{
+      width: 40%;
+      ul{
+        display: flex;
+        justify-content: flex-start;
+        li{
+          width: 20%;
+          text-align: center;
+          a{
+            height: 81px;
+            line-height: 81px;
+            width: 100%;
+            display: inline-block;
+            color: #fff;
+            &.router-link-exact-active{
+              background-color: #303133;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "~@/assets/scss/public.scss";
+
+.page-home-index{
+  .bg-img{
+    height: 968px;
+    background: url("~@/assets/images/home_bg1.jpg") center top no-repeat;
+    .container{
+      padding-top: 200px;
+      .ride-out{
+        height: 192px;
+        background-image: url("~@/assets/images/home-z1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .page-body{
+    height: 1080px;
+    background: url("~@/assets/images/home_bg2.jpg") center top no-repeat;
+    .container{
+      .home-img-box{
+        display: flex;
+        justify-content: space-between;
+        ul{
+          li{
+            position: relative;
+            a{
+             
+              img{
+                opacity: 0.3;
+                transition: 0.9s;
+                display: block;
+                height: auto;
+                width: 100%;
+                &:hover{
+                  opacity: 1;
+                }
+              }
+              .text-box{
+                position: absolute;
+                top: 45%;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                p{
+                  font-size: 24px;
+                }
+              }
+            }
+            
+          }
+          &:first-child{
+            margin-left: -26px;
+            li{
+              &:first-child{
+                margin: -217px 0 320px 0;
+              }
+            }
+          }
+          &:nth-child(2){
+            li{
+              &:last-child{
+                opacity: 0.3;
+                transition: 0.9s;
+                height: 276px;
+                a{
+                  display: inline-block;
+                  display: flex;
+                  height: 100%;
+                  justify-content: center;
+                  align-items: center;
+                  img{
+                    opacity: 1;
+                    width: 80%;
+                  }
+                }
+                &:hover{
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
