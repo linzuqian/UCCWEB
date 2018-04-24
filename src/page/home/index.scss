@@ -15,7 +15,7 @@
     }
   }
   .page-body{
-    height: 1080px;
+    height: 860px;
     background: url("~@/assets/images/home_bg2.jpg") center top no-repeat;
     .container{
       .home-img-box{
@@ -25,14 +25,15 @@
           li{
             position: relative;
             a{
-             
               img{
                 opacity: 0.3;
                 transition: 0.9s;
                 display: block;
                 height: auto;
                 width: 100%;
-                &:hover{
+              }
+              &:hover{
+                img{
                   opacity: 1;
                 }
               }
@@ -53,8 +54,19 @@
           &:first-child{
             margin-left: -26px;
             li{
+              background-color: #1C1C1C;
               &:first-child{
                 margin: -217px 0 320px 0;
+              }
+              &:last-child{
+                height: 274px;
+                a{
+                  display: inline-block;
+                  height: 100%;
+                  img{
+                    height: 100%;
+                  }
+                }
               }
             }
           }

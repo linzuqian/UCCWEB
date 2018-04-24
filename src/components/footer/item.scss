@@ -1,0 +1,56 @@
+@import "~@/assets/scss/public.scss";
+
+.components-footer{
+  background-color: black;
+  .container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-box{
+      p{
+        color: #868686;
+        font-size: 12px;
+      }
+    }
+    .nav-box{
+      width: 40%;
+      .text-box{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        .text{
+          padding: 0 20px;
+          border-right: 1px solid #494949;
+          text-align: right;
+          p{
+            color: #868686;
+            font-size: 12px;
+            margin-bottom: 3px;
+            &:first-child{
+              color: #fff;
+              font-size: 13px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+      .a-box{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+          color: #868686;
+          font-size: 12px;
+          &.a-img{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            background: url("~@/assets/images/footer_wb.png") center center no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
