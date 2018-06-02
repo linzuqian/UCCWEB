@@ -1,5 +1,9 @@
 @import "~@/assets/scss/public.scss";
 
 .page-product-index{
-  
+  .product-bg{
+    background: url(./images/product1.jpg) top center no-repeat;
+    background-size: cover;
+    height: 478px;
+  }
 }

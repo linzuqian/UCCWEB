@@ -1,25 +1,68 @@
 <div class="components-header">
-  <div class="container">
-    <div class="logo-box">
-      <img src="../../assets/images/ucc_logo.png">
+  <div class="components-header-box">
+    <div class="container">
+      <div class="logo-box">
+        <img src="../../assets/images/ucc_logo.png">
+      </div>
+      <div class="nav-box">
+        <ul>
+          <li :class="{active:currentIndex == 0}"
+            @click="switchPage(0)"
+            @mouseenter="movein(0)"
+            @mouseleave="moveout">
+            <router-link :to="{name:'home.index'}">首页</router-link>
+          </li>
+          <li :class="{active:currentIndex == 1}"
+            @click="openProduct(1)"
+            @mouseenter="movein(1)"
+            @mouseleave="moveout">
+            <!-- <router-link :to="{name:'product.index'}">产品</router-link> -->
+            <a>产品</a>
+          </li>
+          <li :class="{active:currentIndex == 2}"
+            @click="switchPage(2)"
+            @mouseenter="movein(2)"
+            @mouseleave="moveout">
+            <router-link :to="{name:'technology.index'}">技术</router-link>
+          </li>
+          <li :class="{active:currentIndex == 3}"
+            @click="switchPage(3)"
+            @mouseenter="movein(3)"
+            @mouseleave="moveout">
+            <router-link :to="{name:'riding.index'}">骑行</router-link>
+          </li>
+          <li :class="{active:currentIndex == 4}"
+            @click="switchPage(4)"
+            @mouseenter="movein(4)"
+            @mouseleave="moveout">
+            <router-link :to="{name:'about.index'}">UCC</router-link>
+          </li>
+          <li id="backgroundSlide"></li>
+        </ul>
+      </div>
     </div>
-    <div class="nav-box">
+  </div>
+  <div class="product-box">
+    <div class="product-nav container" :class="{on:productBox}">
       <ul>
-        <li>
-          <router-link :to="{name:'home.index'}">首页</router-link>
-        </li>
-        <li>
-          <router-link :to="{name:'product.index'}">产品</router-link>
-        </li>
-        <li>
-          <router-link :to="{name:'technology.index'}">技术</router-link>
-        </li>
-        <li>
-          <router-link :to="{name:'riding.index'}">骑行</router-link>
-        </li>
-        <li>
-          <router-link :to="{name:'about.index'}">UCC</router-link>
-        </li>
+        <li @mouseenter="moveinBg(0)" @click="goToPage(0)"><em>山地自行车</em></li>
+        <li @mouseenter="moveinBg(1)"><em>公路自行车</em></router-link></li>
+        <li @mouseenter="moveinBg(2)"><em>儿童自行车</em></router-link></li>
+        <li @mouseenter="moveinBg(3)"><router-link :to="{name:'product.index'}"><em>折叠自行车</em></router-link></li>
+        <li @mouseenter="moveinBg(4)"><router-link :to="{name:'product.index'}"><em>城市自行车</em></router-link></li>
+        <li @mouseenter="moveinBg(5)"><router-link :to="{name:'product.index'}"><em>Gravel Bike</em></router-link></li>
+        <li @mouseenter="moveinBg(6)"><router-link :to="{name:'product.index'}"><em>配件</em></router-link></li>
+      </ul>
+    </div>
+    <div class="product-bg" :class="{on:productBox}">
+      <ul>
+        <li :style="`background-image:url(${require('./images/nav-bg1-1.jpg')})`" :class="{show:currentBg == 0}"></li>
+        <li :style="`background-image:url(${require('./images/nav-bg1-2.jpg')})`" :class="{show:currentBg == 1}"></li>
+        <li :style="`background-image:url(${require('./images/nav-bg1-3.jpg')})`" :class="{show:currentBg == 2}"></li>
+        <li :style="`background-image:url(${require('./images/nav-bg1-4.jpg')})`" :class="{show:currentBg == 3}"></li>
+        <li :style="`background-image:url(${require('./images/nav-bg1-5.jpg')})`" :class="{show:currentBg == 4}"></li>
+        <li :style="`background-image:url(${require('./images/nav-bg1-6.jpg')})`" :class="{show:currentBg == 5}"></li>
+        <li :style="`background-image:url(${require('./images/nav-bg1-7.jpg')})`" :class="{show:currentBg == 6}"></li>
       </ul>
     </div>
   </div>
