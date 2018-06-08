@@ -46,12 +46,12 @@
     <div class="product-nav container" :class="{on:productBox}">
       <ul>
         <li @mouseenter="moveinBg(0)" @click="goToPage(0)"><em>山地自行车</em></li>
-        <li @mouseenter="moveinBg(1)"><em>公路自行车</em></router-link></li>
-        <li @mouseenter="moveinBg(2)"><em>儿童自行车</em></router-link></li>
-        <li @mouseenter="moveinBg(3)"><router-link :to="{name:'product.index'}"><em>折叠自行车</em></router-link></li>
-        <li @mouseenter="moveinBg(4)"><router-link :to="{name:'product.index'}"><em>城市自行车</em></router-link></li>
-        <li @mouseenter="moveinBg(5)"><router-link :to="{name:'product.index'}"><em>Gravel Bike</em></router-link></li>
-        <li @mouseenter="moveinBg(6)"><router-link :to="{name:'product.index'}"><em>配件</em></router-link></li>
+        <li @mouseenter="moveinBg(1)" @click="goToPage(1)"><em>公路自行车</em></li>
+        <li @mouseenter="moveinBg(2)" @click="goToPage(2)"><em>儿童自行车</em></li>
+        <li @mouseenter="moveinBg(3)" @click="goToPage(3)"><em>折叠自行车</em></li>
+        <li @mouseenter="moveinBg(4)" @click="goToPage(4)"><em>城市自行车</em></li>
+        <li @mouseenter="moveinBg(5)" @click="goToPage(5)"><em>Gravel Bike</em></li>
+        <li @mouseenter="moveinBg(6)" @click="goToPage(6)"><em>配件</em></li>
       </ul>
     </div>
     <div class="product-bg" :class="{on:productBox}">
