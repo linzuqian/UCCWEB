@@ -1,5 +1,10 @@
 @import "~@/assets/scss/public.scss";
 
 .page-technology-index{
-  
+  .bg-img{
+    height: 968px;
+    background-image: url("~@/assets/images/IMG_0572.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

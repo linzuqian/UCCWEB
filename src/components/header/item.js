@@ -7,7 +7,7 @@ export default {
       productBox: false,
       currentIndex:'0',
       currentBg: '0',
-      imgUrl:require('./images/nav-bg1-1.jpg'),
+      imgUrl: require('./images/nav-bg1-1.jpg'),
     }
   },
   mounted () {

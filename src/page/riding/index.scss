@@ -1,5 +1,10 @@
 @import "~@/assets/scss/public.scss";
 
 .page-riding-index{
-  
+  .bg-img{
+    height: 1000px;
+    background-image: url("~@/assets/images/IMG_1185.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
